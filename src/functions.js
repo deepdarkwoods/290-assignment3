@@ -13,7 +13,9 @@
 */
 
 //your code here
-
+function uselessFunction(){
+	return null;
+}
 //end your code
 
 var bar = 'not a function';
@@ -30,6 +32,18 @@ var barType = typeof bar;
 */
 
 //your code here
+
+bar = function (doubleArray[]){
+
+
+for(var step=0; step < doubleArray.length; step++)
+	{
+		doubleArray[step] = doubleArray[step] * 2;
+	}
+	return true;
+	//need to add how you can check if doubling occurred
+}
+
 
 //end your code
 
@@ -66,5 +80,10 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
+
+
+
+
+
 
 //end your code

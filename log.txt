@@ -1,1 +1,18 @@
 You log goes in this  file.
+
+
+Start: Mon, 13 Apr 2015 06:42:00 -0800
+End: Mon, 13 Apr 2015 07:36:00 -0800
+Tasks: During this period I cloned the Git repository, read the requirements for the assignment, skimmed the contents of the provided files.
+
+Start: Mon, 13 Apr 2015 09:21:00 -0800
+End: Mon, 13 Apr 2015 09:56:00 -0800
+Tasks: During this period read files functions.js,objects.js, variables.js trying to understand requirements. Searched the reading for potential answers. Completed easy starters.
+
+Start: Tue, 14 Apr 2015 10:20:00 -0800
+End: Tue, 14 Apr 2015 12:20:00 -0800
+Tasks: Working through 'variables.js' but is taking longer than expected. Syntax looks right but test have errors. Reading more on types.
+
+Start: Tue, 14 Apr 2015 12:32:00 -0800
+End: Tue, 14 Apr 2015 13:17:00 -0800
+Tasks: Decided to take a first stab at all the files (functions,objects,variables) to understand what reading I need to focus on. Not sure how I can incrementally check my work.
