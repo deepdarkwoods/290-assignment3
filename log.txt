@@ -16,3 +16,23 @@ Tasks: Working through 'variables.js' but is taking longer than expected. Syntax
 Start: Tue, 14 Apr 2015 12:32:00 -0800
 End: Tue, 14 Apr 2015 13:17:00 -0800
 Tasks: Decided to take a first stab at all the files (functions,objects,variables) to understand what reading I need to focus on. Not sure how I can incrementally check my work.
+
+Start: Wed, 15 Apr 2015 06:50:00 -0800
+End: Wed, 15 Apr 2015 07:48:00 -0800
+Tasks: Working on variables.js page again. 
+
+Start: Wed, 15 Apr 2015 09:12:00 -0800
+End: Wed, 15 Apr 2015 10:31:00 -0800
+Tasks: Switched to working on the object.js page.
+
+Start: Wed, 15 Apr 2015 12:46:00 -0800
+End: Wed, 15 Apr 2015 15:59:00 -0800
+Tasks: Switched to working on the object.js page.
+
+Start: Thu, 16 Apr 2015 06:41:00 -0800
+End: Thu, 16 Apr 2015 7:38:00 -0800
+Tasks: Working through errors on test sheet. Plugging in to online Linter. Need to install Linter in Sublime.
+
+Start: Thu, 16 Apr 2015 09:15:00 -0800
+End: Thu, 16 Apr 2015 11:11:00 -0800
+Tasks: Finished completing the assignment but not all test say successful. Installed Linter which helped.

@@ -33,16 +33,22 @@ var barType = typeof bar;
 
 //your code here
 
-bar = function (doubleArray[]){
+bar = function (doubleArray){
 
-
+var doublednumber = 0;
+var check = true;
 for(var step=0; step < doubleArray.length; step++)
 	{
+		doublednumber = doubleArray[step] * 2;
 		doubleArray[step] = doubleArray[step] * 2;
+		if (doublednumber !==doubleArray[step]) { check = false;}
 	}
-	return true;
-	//need to add how you can check if doubling occurred
-}
+	if (check === false)
+		{return false;}
+	else
+		{return true;}
+	
+};
 
 
 //end your code
@@ -55,9 +61,12 @@ for(var step=0; step < doubleArray.length; step++)
 * @property {string} message - the commit message
 */
 function GitLog(hash, date, message) {
-    this.hash = hash;
-    this.date = date;
-    this.message = message;
+
+	var newGitLog = new Object();
+	newGitLog["hash"] = hash;
+    newGitLog.date = date;
+    newGitLog.message = message;
+    return newGitLog;
 }
 
 /**
@@ -81,7 +90,14 @@ function GitLog(hash, date, message) {
 
 //your code here
 
+function parseGit(logArray){
 
+	function splitString(stringToSplit,separator){
+    var arrayOfStrings = stringToSplit.split(separator);
+   return arrayOfStrings.join(' | ');
+	}
+	
+}
 
 
 

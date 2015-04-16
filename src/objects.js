@@ -49,48 +49,53 @@ function returnObjectLiteral() {
 
 //your code here
 
-function constructor(user){
+function constructor(user)
+{
 
 	//store user name
-	this.user = user;
-	this.sentMsg = [];
-	this.recMsg = [];
+	this.username = user;
+	this.sentMsg = new Array(10);
+	this.recMsg = new Array(10);
+	this.totalReceived = 0;
+	this.totalSent = 0;
 
 	//log the message in array, mark as sent or received
 	this.logfunction =  function(messageText,direction)
-	}
-		if(direction == 1) 	// Recieved Message
+		{
+			if(direction === 1)	// Received Message
 
+				{
+					this.totalReceived ++;							//increase count total
+					recMsg.push(messageText);						//add message to the end of the array
+					if(recMsg.length > 5)
+					{recMsg.shift();}								// if we have more than max, delete oldest (1st in array)
+				}
+
+				else			//Sent Message
+			
 			{
-			this.totalReceived ++;							//increase count total
-			recMsg.push(messageText);						//add message to the end of the array
-			if(recMsg.length>5) {recMsg.shift();}			// if we have more than max, delete oldest (1st in array)
-			} 
+				this.totalSent ++ ;									//increase count total
+				sentMsg.push(messageText) ;							//add message to the end of the array
+				if(sentMsg.length>5)
+				{sentMsg.shift();}									// if we have more than max, delete oldest (1st in array)
+			}
+			
+		};
 
-			else			//Sent Message
-		
-		{
-			this.totalSent ++;								//increase count total
-			sentMsg.push(messageText);						//add message to the end of the array
-			if(sentMsg.length>5) {sentMsg.shift();}			// if we have more than max, delete oldest (1st in array)
-		}		
-		
-	}
+			getSentMessage = function(n)
+				{
+					return this.sentMsg[n];
+				};
 
-	getSentMessage: function(n)
-		{
-			return this.sentMsg[n];
-		}
+			totalSent = function()
+				{
+					return this.totalSent;
+				};
 
-	totalSent: function()
-		{
-			return this.totalSent;
-		}
-
-	totalReceived: function()
-		{
-			return this.totalReceived;
-		}
+			totalReceived = function()
+				{
+					return this.totalReceived;
+				};
 
 }
 
@@ -105,7 +110,7 @@ function constructor(user){
 */
 //your code here
 
-MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[5];}
+MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[4];};
 
 //end your code
 
@@ -116,5 +121,11 @@ MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[5];}
 */
 
 //your code here
+var BlackHatGuy = new MessageLog();
+BlackHatGuy.constructor("BlackHatGuy");
+
+BlackHatGuy.logfunction("foo",1);
+BlackHatGuy.logfunction("bar",1);
+BlackHatGuy.logfunction("baz",1);
 
 //end your code
