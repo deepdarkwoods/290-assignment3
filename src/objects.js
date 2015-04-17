@@ -10,11 +10,8 @@
 
 function returnObjectLiteral() {
   //your code here
-  var snack = new Object();
-  snack["type"] = "Goldfish";
-  snack.brand = "Pepperidge Farm";
-  snack.flavor = "Cheddar";
-  snack.count = 2000;
+
+  var snack = {type:"Goldfish", brand:"Pepperidge Farm",flavor:"Cheddar", count:2000};
 
   return snack; //Modify ONLY this line
   //end your code
@@ -49,7 +46,7 @@ function returnObjectLiteral() {
 
 //your code here
 
-function constructor(user)
+function MessageLog(user)
 {
 
 	//store user name
@@ -60,7 +57,7 @@ function constructor(user)
 	this.totalSent = 0;
 
 	//log the message in array, mark as sent or received
-	this.logfunction =  function(messageText,direction)
+	this.logMessage = function(messageText,direction)
 		{
 			if(direction === 1)	// Received Message
 
@@ -76,7 +73,7 @@ function constructor(user)
 			{
 				this.totalSent ++ ;									//increase count total
 				sentMsg.push(messageText) ;							//add message to the end of the array
-				if(sentMsg.length>5)
+				if(sentMsg.length > 5)
 				{sentMsg.shift();}									// if we have more than max, delete oldest (1st in array)
 			}
 			
@@ -84,7 +81,8 @@ function constructor(user)
 
 			getSentMessage = function(n)
 				{
-					return this.sentMsg[n];
+					var message = this.sentMsg[n];
+					return message;
 				};
 
 			totalSent = function()
@@ -95,6 +93,7 @@ function constructor(user)
 			totalReceived = function()
 				{
 					return this.totalReceived;
+					
 				};
 
 }
@@ -121,11 +120,10 @@ MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[4];};
 */
 
 //your code here
-var BlackHatGuy = new MessageLog();
-BlackHatGuy.constructor("BlackHatGuy");
+var myLog = new MessageLog("BlackHatGuy");
 
-BlackHatGuy.logfunction("foo",1);
-BlackHatGuy.logfunction("bar",1);
-BlackHatGuy.logfunction("baz",1);
+myLog.logMessage("foo",1);
+myLog.logMessage("bar",1);
+myLog.logMessage("baz",1);
 
 //end your code

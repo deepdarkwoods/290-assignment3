@@ -62,11 +62,10 @@ for(var step=0; step < doubleArray.length; step++)
 */
 function GitLog(hash, date, message) {
 
-	var newGitLog = new Object();
-	newGitLog["hash"] = hash;
-    newGitLog.date = date;
-    newGitLog.message = message;
-    return newGitLog;
+	this["hash"] = hash;
+    this.date = date;
+    this.message = message;
+   
 }
 
 /**
@@ -92,11 +91,13 @@ function GitLog(hash, date, message) {
 
 function parseGit(logArray){
 
-	function splitString(stringToSplit,separator){
-    var arrayOfStrings = stringToSplit.split(separator);
-   return arrayOfStrings.join(' | ');
-	}
-	
+	var myarray = new Gitlog();
+	myarray["hash"]= logArray.substring(0,7);
+	myarray.date = logArray.substring(9,39);
+	myarray.message = logArray.substring(43,18);
+
+	return myarray;
+
 }
 
 
