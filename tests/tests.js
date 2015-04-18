@@ -54,7 +54,7 @@ test("bar function tests",function(assert){
 	assert.ok(result,'Returns success on valid input.');
 	assert.deepEqual(a, [3,2,10], 'Correctly doubles array contents.');
 	try{
-		var result = false;
+		result = false;
 		if( bar(['nope']) === false){
 			result = true;
 		}

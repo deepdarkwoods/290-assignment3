@@ -51,10 +51,12 @@ function MessageLog(user)
 
 	//store user name
 	this.username = user;
-	this.sentMsg = new Array(10);
+	this.sentMsg =new Array(10);
 	this.recMsg = new Array(10);
-	this.totalReceived = 0;
-	this.totalSent = 0;
+	this.numberReceived = 0;
+	this.numberSent = 0;
+	this.lastmessage = [];
+	
 
 	//log the message in array, mark as sent or received
 	this.logMessage = function(messageText,direction)
@@ -62,37 +64,32 @@ function MessageLog(user)
 			if(direction === 1)	// Received Message
 
 				{
-					this.totalReceived ++;							//increase count total
-					recMsg.push(messageText);						//add message to the end of the array
-					if(recMsg.length > 5)
-					{recMsg.shift();}								// if we have more than max, delete oldest (1st in array)
+					this.numberReceived ++;										//increase count total
+					this.recMsg.unshift(messageText);							//add message to the beginning of the array									
 				}
 
 				else			//Sent Message
 			
-			{
-				this.totalSent ++ ;									//increase count total
-				sentMsg.push(messageText) ;							//add message to the end of the array
-				if(sentMsg.length > 5)
-				{sentMsg.shift();}									// if we have more than max, delete oldest (1st in array)
-			}
+				{
+					this.numberSent ++ ;										//increase count total
+					this.sentMsg.unshift(messageText) ;							//add message to the beginning of the array					
+				}
 			
 		};
 
-			getSentMessage = function(n)
+			this.getSentMessage = function(n)
 				{
-					var message = this.sentMsg[n];
-					return message;
+					return this.sentMsg[n];
 				};
 
-			totalSent = function()
+			this.totalSent = function()
 				{
-					return this.totalSent;
+					return this.numberSent;
 				};
 
-			totalReceived = function()
+			this.totalReceived = function()
 				{
-					return this.totalReceived;
+					return this.numberReceived;
 					
 				};
 
@@ -109,7 +106,7 @@ function MessageLog(user)
 */
 //your code here
 
-MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[4];};
+MessageLog.prototype.lastReceivedMessage = function(){return this.recMsg[0];};
 
 //end your code
 
