@@ -36,3 +36,64 @@ Tasks: Working through errors on test sheet. Plugging in to online Linter. Need 
 Start: Thu, 16 Apr 2015 09:15:00 -0800
 End: Thu, 16 Apr 2015 11:11:00 -0800
 Tasks: Finished completing the assignment but not all test say successful. Installed Linter which helped.
+
+Start: Fri, 17 Apr 2015 17:08:00 -0800
+End: Fri, 17 Apr 2015 19:15:00 -0800
+Tasks: Worked on concepts provide by instructor.Overhauled parseGit function.
+
+Start: Sat, 18 Apr 2015 21:49:00 -0800
+End: Sat, 18 Apr 2015 24:47:00 -0800
+Tasks: Passed all tests. finished Assigment # 3, part 1.
+
+Start: Mon, 20 Apr 2015 06:41:00 -0800
+End: Mon, 20 Apr 2015 08:01:00 -0800
+Tasks: Watched lecture, read.
+
+Start: Tue, 21 Apr 2015 06:50:00 -0800
+End: Tue, 21 Apr 2015 07:45:00 -0800
+Tasks: Setup Git, html, and javascript files.
+
+Start: Tue, 21 Apr 2015 11:09:00 -0800
+End: Tue, 21 Apr 2015 12:56:00 -0800
+Tasks: Work on AJAX response.
+
+Start: Wed, 21 Apr 2015 06:52:00 -0800
+End: Wed, 21 Apr 2015 08:16:00 -0800
+Tasks: Troublshoot AJAX connection.
+
+Start: Wed, 22 Apr 2015 12:27:00 -0800
+End: Wed, 22 Apr 2015 13:01:00 -0800
+Tasks: Connection Made, Have objects from parsing, Need to establish local storage and dynamic elements.
+
+Start: Thu, 23 Apr 2015 06:41:00 -0800
+End: Thu, 23 Apr 2015 08:05:00 -0800
+Tasks: Made connection, but stuck on putting the JSON string into html.Format is Foobar.
+
+Start: Thu, 23 Apr 2015 02:18:00 -0800
+End: Thu, 23 Apr 2015 04:30:00 -0800
+Tasks: Finally was able to parse data & create HTML objects. Cannot put in text or filter, though.
+
+Start: Thu, 23 Apr 2015 02:18:00 -0800
+End: Thu, 23 Apr 2015 04:30:00 -0800
+Tasks: Finally was able to parse data & create HTML objects. Cannot put in text or filter, though.
+
+Start: Fri, 24 Apr 2015 06:40:00 -0800
+End: Fri, 24 Apr 2015 08:11:00 -0800
+Tasks: Fixed the html button. Cannot get object to pass to favorite list.
+
+Start: Fri, 24 Apr 2015 12:37:00 -0800
+End: Fri, 24 Apr 2015 14:59:00 -0800
+Tasks: Backtracked to implement instructors methods.
+
+Start: Fri, 24 Apr 2015 12:37:00 -0800
+End: Fri, 24 Apr 2015 15:59:00 -0800
+Tasks: Implement favorites list.
+
+Start: Fri, 24 Apr 2015 17:17:00 -0800
+End: Fri, 24 Apr 2015 19:18:00 -0800
+Tasks: URL Filtering
+
+
+Start: Sat, 25 Apr 2015 7:46:00 -0800
+End: Sat, 25 Apr 2015 11:36:00 -0800
+Tasks: Wrap Up. Did not meet many requirements.Frustrating.
